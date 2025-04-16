@@ -1,366 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <style>
-                                               /* header */
-  :root{
-    --color:  rgb(189, 100, 36); 
-    --color1: rgb(0, 7, 14);
-    --font-family:Arial, Helvetica, sans-serif;
-    
-  }
-  .shadow{
-    box-shadow:0px 0px 20px var(--color);
-  }
-
-  
-  body{
-    background-color: #002545 ;
-    background-size: cover;
-    background-repeat:no-repeat;
-    margin:0;
-    padding:0;
-  }
-  header{
-  position:sticky;
-  top:0px;
-  background-color:rgb(36, 6, 211);
-  width:100%;
-  }
-  .headline{
-   height: 40px;
-
-   width:400px;
-   padding:10px;
-   margin:20px;
-   display:flex;
-   align-items: center;
-   justify-content: space-evenly;
-   color:var(--color);
-   position:sticky;
-   top:0px;
-  }
-  @media only screen and (max-width:400px){
-    .headline {
-    display: flex;
-    }
-  }
-  .logo{
-    padding:10px;
-    font-family:var(--font-family);
-    font-size:30px;
-    letter-spacing: 1px;
-    width:800px;
-    color:var(--color);
-  }
-  li{
-    list-style: none;
-    border:2px solid transparent;
-    padding:5px;
-    letter-spacing: 1px;
-    font-size: large;
-  }
-  li:hover{
-    border-bottom:2px solid var(--color);
-  }
-  a{
-  text-decoration: none;
-  border:2px solid transparent;
-  padding:5px;
-  color:rgb(255, 255, 255);
-  }
-  a:hover{
-    color: var(--color);
-  }
-  .connect {
-   background-color:var(--color);
-   border-radius:65px;
-   list-style: none;
-   font-size: large;
-   border:2px solid var(--color);
-   padding:10px 40px;
-   color:white;
-   letter-spacing: 2px;
-  }
-  .connect:hover{
-    background:transparent;
-    box-shadow: 0px 0px 15px var(--color),0px 0px 15px  var(--color),0px 0px 15px var(--color);
-  }
- 
-                                               /* intro */
-  section{
-    display: flex;
-    justify-content: space-evenly;
-  }
-  #intro{
-    border:0px solid black;
-    height:450px;
-    margin:120px 0px 0px 180px;
-    display:inline-block;
-    width:50%;
-  }
-  .home-image{
-    border:0px solid black;
-    width:50%;
-  }
-  .my-image{
-    background-image:url(pizz.jpg);
-    background-size: cover;
-    margin:60px 0px 0px 70px;
-    border-radius:200px;
-    height:300px;
-    width:300px;
-  }
-  /* .my{
-    background-color:var(--color);
-    border:1px solid black;
-    border-radius:15px;
-    transform: rotate(45deg) skew(25deg);
-    height:300px;
-    width: 600px;
-  } */
-  .welcome{
-    letter-spacing: 1px;
-    font-family:sans-serif;
-    font-size:40px;
-    color:var(--color);
-    letter-spacing: 1px;
-  }
-  .hello{
-    font-family:var(--font-family);
-    font-size: 30px;
-    color:white;
-    letter-spacing: 1px;
-  }
-
-  .span-hello{
-    letter-spacing: 1px;
-    font-family:var(--font-family);
-    color:var(--color);
-  }
-  .name {
-    font-size: 45px;
-    color:white;
-    letter-spacing: 1px;
-    font-family:var(--font-family);
-  }
-  .home-wab-design{
-    font-family:var(--font-family);
-    color:white;
-    font-size:30px;
-    letter-spacing: 1px;
-  }
-  .margin1{
-    margin-top:-30px;
-  }
-  .link{
-    border:px solid black;
-  display: flex;
-  flex-wrap: wrap;
-  }
-                                            /* link-page */
- li{
-  padding-top:10px;
-   }
-  .link li{
-    margin:0px 0px 0px 20px;
-    border:2px solid var(--color);
-    border-radius:100px;
-    text-align: center;
-    width:25px;
-    height:25px;
-    color:var(--color);
-  }
-  .link li:hover{
-    background-color:var(--color);
-    color:#092741;
-  }
-                          /* skill */
-
-  /* @media only screen and (max-width:400px;){
-    .my-skill-box{
-      display: block;
-    }
-  } */
-    
-  .skill-page{
-  /* padding:20px;
-  background-color:rgb(0, 0, 0);
-  width:100%;
-  align-items:center;
-  gap:10px;
-  flex-flow:wrap;
-  color:white;
-  font-size:25px;
-  text-align:center; */
-  background-color:rgb(32,41,101);
-  height:700px;
-  width:100%;
-  text-align:center;
-  } 
-  .my-skill-header-place{
-    padding:20px 0px 60px 0px;
-    margin:auto;
-  }
-  .span-my{
-    color: var(--color);
-    font-family: sans-serif;
-    font-size: 50px;
-    letter-spacing: 1px;
-  }
-  .span-skill{
-    color:white;
-    font-family: sans-serif;
-    font-size: 50px;
-    letter-spacing: 1px;
-  }   
-  .my-skill-box{
-    border:2px soild black;
-    display: flex;   
-    justify-content: space-around;
-  }
-  .ui-ux{
-    color: var(--color);
-    font-family:var(--font-family);
-    border-radius: 10px;
-    background-color:var(--color1);
-    box-shadow: 0px 0px 50px var(--color),0px 0px 50px var(--color);
-    width:300px;
-    height:150px;
-    border:2px solid black;
-  }
-  @media only screen and (max-width:400px){
-    .my-skill-header-place{
-      margin:0px 0px -80px 0px ;
-    }
-    .my-skill-box{
-      display: block;
-    }
-    .ui-ux{
-      margin:30px auto;
-      box-shadow: 0px 0px 20px ;
-    }
-    .skill-page{
-      height:780px;
-    }
-  }
-  .skill-box-h6{
-    
-     width:318px;
-     color:white;
-     font-family: baloo 2;
-     font-size:10px;
-  }
-  .wab-design{
-   background-color: var(--color);
-   border-radius: 10px;
-   height:150px;
-   width:450px;
-   float:left;
-  } 
-  .ai{
-
-    background-color: var(--color);
-    border-radius: 10px;
-   height:150px;
-   width:450px;
-   float:right;
-  }        
-  .flooter{
-    background-color: rgb(35, 35, 35);
-    border:10px solid white;
-    height:200px;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Ramboplus</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body> 
-  <header>
-      <div class="headline">
-        <h1 class="logo">Ramboplus.</h1>
-          <li><a href="">Home</a></li>
-          <li><a href="#">Skill</a></li>
-          <li><a href="#">project</a></li>
-         <div class="connect shadow" prpovertarget="mypopover" href="contact.html"><a href="https://studio.youtube.com/channel/UCR3usslUcTqQiH1m7fC8-EQ/translations">Connect</a></div>
-      </div>
-  </header>
+<body class="font-sans text-gray-800 scroll-smooth">
 
-  <section>
-    
-  <div id="intro">
-     <h2 class="welcome margin1">WELCOME</h2>
-     <h3 class="hello margin1"><span class="span-hello"> Hello, </span>  It's Me</h3>
-     <h1 class="name margin1">Sanjay Sharma</h1>
-     <h3 class="home-wab-design margin1">And i'm  a <span> web design</span></h3>
-     <ul class="link">
-      <li><ion-icon name="logo-instagram"></ion-icon></li>
-      <li href="https://www.google.com"><ion-icon  name="logo-facebook"></ion-icon></li>
-      <li><ion-icon name="logo-linkedin"></ion-icon></li>
-     </ul>
-  </div>
-  <div class="home-image">
-    <div class="my-image"></div>
-    <!-- <div class="my"></div> -->
-    
-  </div>
-</section>
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-8">
+    <h1 class="text-5xl font-bold mb-4">Sanjay Sharma</h1>
+    <p class="text-xl mb-4">Full-stack Developer</p>
+    <p class="mb-6 max-w-xl">I build fast, modern web applications using clean code and beautiful design.</p>
+    <a href="#projects" class="bg-white text-indigo-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">View Portfolio</a>
+  </section>
 
-<div class="skill-page">
-  <div class="my-skill-header-place">
-    <h1><span class="span-my">My</span> <span class="span-skill">Skill</span></h1>
-  </div> 
-  <div class="my-skill-box">
-    <div class="ui-ux">
-       <h1>UI/UX</h1>
-       <h6 class="skill-box-h6">Skilled in creating intuitive, user-centered designs that enhance usability and streamline digital experiences across web and mobile platforms.</h6>
+  <!-- About Section -->
+  <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+    <img src="https://via.placeholder.com/150" alt="Profile" class="w-32 h-32 rounded-full mx-auto mb-4">
+    <p class="mb-4">I'm a passionate developer who loves building modern web experiences. I specialize in JavaScript, React, and backend integration.</p>
+    <div class="flex flex-wrap justify-center gap-4 mt-6">
+      <span class="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm">Html</span>
+      <span class="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm">CSS</span>
+      <span class="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm">React</span>
+      <span class="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm">Tailwind CSS</span>
+      <span class="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm">Node.js</span>
     </div>
-    <div class="ui-ux">
-      <h1>UI/UX</h1>
-       <h6 class="skill-box-h6">Skilled in creating intuitive, user-centered designs that enhance usability and streamline digital experiences across web and mobile platforms.</h6>
-    </div>
-    <div class="ui-ux">
-      <h1>UI/UX</h1>
-       <h6 class="skill-box-h6">Skilled in creating intuitive, user-centered designs that enhance usability and streamline digital experiences across web and mobile platforms.</h6>
-    </div>
-  </div>
-</div>
+  </section>
 
-   <div class="flooter">        
-      
-   </div>
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-6 bg-gray-100" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-300 flex items-center justify-center"><img src="image/blue-calculater.jpg" alt=""></div>
 
-   <footer class="footer">
-    <div class="container">
-      <div class="row text-center text-md-start">
-        <div class="col-md-3">
-          <h6>Accommodation</h6>
-          <p>Hospitals<br>Bed & Breakfast</p>
-        </div>
-        <div class="col-md-3">
-          <h6>Quick Links</h6>
-          <p>Blog<br>Appointment<br>Booking Guarantee</p>
-        </div>
-        <div class="col-md-3">
-          <h6>About Us</h6>
-          <p>Hospital Group<br>Affiliate Program</p>
-        </div>
-        <div class="col-md-3">
-          <h6>Follow us</h6>
-          <p>
-            <a href="#">Facebook</a><br>
-            <a href="#">LinkedIn</a>
-          </p>
+        <div class="p-4">
+          <h3 class="font-semibold text-xl mb-2">Project One</h3>
+          <p class="text-sm text-gray-600">A short description of the project.</p>
         </div>
       </div>
-      <div class="text-center mt-3">
-        <small>&copy; 2024 Medisense. All rights reserved.</small>
+      <!-- Duplicate for more projects -->
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-300 flex items-center justify-center"><img src="image/blue-calculater.jpg" alt=""></div>
+
+        <div class="p-4">
+          <h3 class="font-semibold text-xl mb-2">Project One</h3>
+          <p class="text-sm text-gray-600">A short description of the project.</p>
+        </div>
       </div>
+      <!-- Duplicate for more projects -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 max-w-2xl mx-auto" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-center mb-6">Contact Me</h2>
+    <p class="text-center mb-8">Got a project? Let's work together.</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
+      <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-lg" required />
+      <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-lg" required />
+      <textarea name="message" rows="5" placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded-lg" required></textarea>
+      <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-600 py-8 border-t">
+    <p>&copy; 2025 John Doe. All rights reserved.</p>
+    <div class="mt-2 flex justify-center gap-6">
+      <a href="#about" class="hover:text-indigo-600">About</a>
+      <a href="#projects" class="hover:text-indigo-600">Projects</a>
+      <a href="#contact" class="hover:text-indigo-600">Contact</a>
+    </div>
+    <div class="mt-4">
+      <a href="#" class="text-indigo-600 hover:underline">Back to Top</a>
     </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
